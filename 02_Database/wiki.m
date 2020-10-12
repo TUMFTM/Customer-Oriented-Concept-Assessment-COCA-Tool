@@ -23,7 +23,7 @@ KW   = {'Acceleration',               's',        6,    13,    2.8,         -0.5
         'Overhang rear',              'mm',       20,   1400,  300,         -.7;
         'Wheelbase',                  'mm',       18,   3500,  1900,        0.55;
         'Ratio Height/Width',         '-',        16,   1.15,  0.5,         -1;
-        'Ratio Length/Heigth',        '-',        17,   4.35,  1.6,         0.7;
+        'Ratio Length/Height',        '-',        17,   4.35,  1.6,         0.7;
         'Wheel diameter',             'mm',       22,   800,   500,         0.5
 };
 
