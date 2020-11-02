@@ -18,6 +18,7 @@ KW   = {'Acceleration',               's',        6,    13,    2.8,         -0.5
         'Payload',                    'kg',       35,   880,   80,          0.65; %14
         'Number of seats',            '-',        34,   9,     1,           0.5;  %15
         'Range',                      'km',       32,   1000,  50,          0.9;  %16
+<<<<<<< HEAD
         'Charging time',              'min',      33,   150,   5,           -0.55;%17
         'Overhang front',             'mm',       19,   1100,  600,         -0.6; %18
         'Overhang rear',              'mm',       20,   1400,  300,         -0.7;  %19
@@ -25,13 +26,21 @@ KW   = {'Acceleration',               's',        6,    13,    2.8,         -0.5
         'Ratio Height/Width',         '-',        16,   1.15,  0.5,         -1;   %21
         'Ratio Length/Height',        '-',        17,   4.35,  1.6,         0.7;  %22
         'Wheel diameter',             'mm',       22,   800,   500,         0.5   %23
+=======
+        'Overhang front',             'mm',       19,   1100,  600,         -0.6; %17
+        'Overhang rear',              'mm',       20,   1400,  300,         -.7;  %18
+        'Wheelbase',                  'mm',       18,   3500,  1900,        0.55; %19
+        'Ratio Height/Width',         '-',        16,   1.15,  0.5,         -1;   %20
+        'Ratio Length/Height',        '-',        17,   4.35,  1.6,         0.7;  %21
+        'Wheel diameter',             'mm',       22,   800,   500,         0.5   %22
+>>>>>>> c1111418298263937bfd73917e92c44516624cb1
 };
 
 %Weighting factors for the custormer properties
 G = {   'Vehicle dynamics',             [1 1 1 1 1];
         'Costs',                        [1 1 1];
         'Comfort',                      [1 1 1 1];
-        'Suitability',                  [1 1 1 1 1];
+        'Suitability',                  [1 1 1 1];
         'Design',                       [1 1 1 1 1 1];
         'Safety'                        [1,1,1];
         };
