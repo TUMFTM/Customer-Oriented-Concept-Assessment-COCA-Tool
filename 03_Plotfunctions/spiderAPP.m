@@ -29,6 +29,13 @@ ax.Visible = 'off'; set(ax,'color','w');
 % Define the color scale
 col = color_index(c);
 
+% Adapaption Krapf:
+% Define the color scale for TUM colors (overwrite col)
+col = [ 162 173 0
+        227 114 34
+        152 198 234
+        0 101 189] ./255;
+
 % Define the portions of the Spider Diagramm according to the number of data
 angw = linspace(0,2*pi,r+1)';
 ang = angw(1:end-1);
@@ -123,7 +130,7 @@ A_yaxis = A_yaxis *(1/6);
 o = plot(ax,A_xaxis,A_yaxis);  %plottet nicht
 
 % set color of the lines
-for ii = 1:c; set(o(ii),'color',col(ii,:),'linewidth',1.5); end  
+for ii = 1:c; set(o(ii),'color',col(ii,:),'linewidth',2.2); end  
 
 hold on
 close
