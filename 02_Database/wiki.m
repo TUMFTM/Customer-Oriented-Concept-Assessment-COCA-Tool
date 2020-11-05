@@ -8,7 +8,7 @@ KW   = {'Acceleration',               's',        6,    13,    2.8,         -0.5
         'Lateral acceleration',       'g',        9,    1.8,   1,            0.5; %4
         'Turning cycle',              'm',        10,   13.5,  9,           -0.5; %5
         'Asset Costs',                'T€',       41,   60,    0,           -0.7; %6
-        'Combined Operational Costs', '€/100km',  39,   67.68, 7.6,         -0.7; %7
+        'Combined Operational Costs', '€/100km',  39,   45,    0,           -1.5; %7
         'Consumption',                '€/100km',  40,   16,    0,           -0.7; %8
         'Headroom front',             'mm',       25,   1150,  900,         0.6;  %9
         'Legroom rear',               'mm',       27,   1020,  670,         0.5;  %10
@@ -23,7 +23,7 @@ KW   = {'Acceleration',               's',        6,    13,    2.8,         -0.5
         'Overhang rear',              'mm',       20,   1400,  300,         -.7;  %18
         'Wheelbase',                  'mm',       18,   3500,  1900,        0.55; %19
         'Ratio Height/Width',         '-',        16,   1.15,  0.5,         -1;   %20
-        'Ratio Length/Height',        '-',        17,   4.35,  1.6,         0.7;  %21
+        'Ratio Length/Height',        '-',        17,   4.30,  1.6,         0.8;  %21
         'Wheel diameter',             'mm',       22,   800,   500,         0.5   %22
 };
 
