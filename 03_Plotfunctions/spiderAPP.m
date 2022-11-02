@@ -58,14 +58,14 @@ for ii = 1:r
 	
     %Plot Thick lines in the ii_te Spider diagram area portion
      plot(ax,[cos(angs(ii)) * inc; cos(angs(ii+1)) * inc ], ...
-		[sin(angs(ii)) * inc; sin(angs(ii+1)) * inc],'color','k','linewidth', 1);
+		[sin(angs(ii)) * inc; sin(angs(ii+1)) * inc],'color',[0.7 0.7 0.7],'linewidth', 0.3);
         
 	% Add numbers to the Thickmarks
 	for jj = 1:5 
             temp = text(ax,cos(angs(ii)) * inc(jj) + sin(angs(ii)) * tx(jj), ...
 			sin(angs(ii)) * inc(jj) - cos(angs(ii)) * tx(jj), ...
 			num2str(rd(rng(ii,1) + inc(jj)*diff(rng(ii,:)),-2)), ...
-			'fontsize',10);
+			'fontsize',15);
         
 		%Flip the text alignment for lower axes
 		if angs(ii) >= pi
@@ -91,14 +91,14 @@ inc = (1/6); tx = 0.05 * ones(1,6); tl = 0:.25:1;
 for ii = 1:r
 	% plot tick lines      
      plot(ax,[cos(angs(ii)) * inc; cos(angs(ii+1)) * inc ], ...
-		[sin(angs(ii)) * inc; sin(angs(ii+1)) * inc],'color','r','linewidth', 2 );
+		[sin(angs(ii)) * inc; sin(angs(ii+1)) * inc],'color','r','linewidth', 1 );
         
 	% label the tick marks
 	for jj = 1:1
             temp = text(ax,cos(angs(ii)) * inc(jj) + sin(angs(ii)) * tx(jj), ...
 			sin(angs(ii)) * inc(jj) - cos(angs(ii)) * tx(jj), ...
 			num2str(rd(rng(ii,1) + inc(jj)*diff(rng(ii,:)),-2)), ...
-			'fontsize',10);
+			'fontsize',15);
 		% flip the text alignment for lower axes
 		if angs(ii) >= pi
 			set(temp,'HorizontalAlignment','right');
@@ -130,7 +130,7 @@ A_yaxis = A_yaxis *(1/6);
 o = plot(ax,A_xaxis,A_yaxis);  %plottet nicht
 
 % set color of the lines
-for ii = 1:c; set(o(ii),'color',col(ii,:),'linewidth',2.2); end  
+for ii = 1:c; set(o(ii),'color',col(ii,:),'linewidth',3.3); end 
 
 hold on
 close
