@@ -22,8 +22,8 @@ legend(ax,'off'); reset(ax); cla(ax); hold(ax,'on'); ax.BackgroundColor = [1,1,1
 set(ax,'nextplot','add');
 
 % clear figure and set limits; make the backgorund white
-set(ax,'visible','off'); set(ax,'color','w');        %macht 2D plot unsichtbar und den Hintergrund weiß
-set(ax,'xlim',[-1.25 1.25],'ylim',[-1.25 1.25]); axis(ax,'equal','manual') %Bestimmt Größe des 2D plots
+set(ax,'visible','off'); set(ax,'color','w');        %macht 2D plot unsichtbar und den Hintergrund weiÃŸ
+set(ax,'xlim',[-1.25 1.25],'ylim',[-1.25 1.25]); axis(ax,'equal','manual') %Bestimmt GrÃ¶ÃŸe des 2D plots
 ax.Visible = 'off'; set(ax,'color','w');
 
 % Define the color scale
@@ -48,7 +48,7 @@ start = [zeros(1,r); cos(ang')];
 stop = [zeros(1,r); sin(ang')];
 
 % Plot the Main Axes of the Spider Diagramm
-plot(ax,start,stop,'color','k','linestyle','-','linewidth', 1); hold(ax, 'on'); axis equal;  % öffnet figure...
+plot(ax,start,stop,'color','k','linestyle','-','linewidth', 1); hold(ax, 'on'); axis equal;  % Ã¶ffnet figure...
 
 % Calculate axes markers
 inc = (2/6):(1/6):1; tx = 0.05 * ones(1,6);
